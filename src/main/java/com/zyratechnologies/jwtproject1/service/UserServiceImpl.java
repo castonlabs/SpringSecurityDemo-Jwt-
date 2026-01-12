@@ -2,6 +2,8 @@ package com.zyratechnologies.jwtproject1.service;
 
 import com.zyratechnologies.jwtproject1.dtos.RequestDto;
 import com.zyratechnologies.jwtproject1.dtos.ResponseDto;
+import com.zyratechnologies.jwtproject1.exceptions.UserAlreadyExistException;
+import com.zyratechnologies.jwtproject1.model.User;
 import com.zyratechnologies.jwtproject1.repository.UserRepository;
 import lombok.AllArgsConstructor;
 
