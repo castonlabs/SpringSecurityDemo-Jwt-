@@ -6,10 +6,12 @@ import com.zyratechnologies.jwtproject1.exceptions.UserAlreadyExistException;
 import com.zyratechnologies.jwtproject1.model.User;
 import com.zyratechnologies.jwtproject1.repository.UserRepository;
 import lombok.AllArgsConstructor;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @AllArgsConstructor
 public class UserServiceImpl implements UserServiceInterf{
     private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
 
     public ResponseDto registerUser(RequestDto request) {
 
